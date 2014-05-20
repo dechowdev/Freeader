@@ -1,3 +1,5 @@
+.sass_cache/**/**
+node_modules/**/**
 node_modules/.bin/gulp
 node_modules/gulp/bin/gulp.js
 node_modules/gulp/completion/bash
