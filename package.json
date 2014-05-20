@@ -1,0 +1,33 @@
+{
+  "name": "freeader",
+  "version": "0.1.0",
+  "description": "Freeader a clever new RSS Reader",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.6.2"
+  },
+  "devDependencies": {
+    "gulp-ruby-sass": "^0.5.0",
+    "gulp-imagemin": "^0.5.0",
+    "gulp-minify-css": "^0.3.4",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-notify": "^1.2.6",
+    "gulp-cache": "^0.1.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-clean": "^0.2.4",
+    "gulp-csslint": "^0.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dechowmedia/Freeader"
+  },
+  "author": "Lucas Dechow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dechowmedia/Freeader/issues"
+  },
+  "homepage": "https://github.com/Dechowmedia/Freeader"
+}
