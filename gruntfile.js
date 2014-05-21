@@ -94,11 +94,11 @@ module.exports = function(grunt) {
             }
         },
 
-        // clean: {
-        //     js: ["dist/js/*.js", "!dist/js/*.min.js"],
-        //     css: ['dist/css/*.css'],
-        //     compass: ['assets/css/*.css', '!assets/css/libs/*.css']
-        // },
+        clean: {
+            js: ["dist/js/*.js", "!dist/js/*.min.js"],
+            css: ['dist/css/*.css'],
+            compass: ['assets/css/*.css', '!assets/css/libs/*.css']
+        },
 
         watch: {
           styles: {
@@ -138,6 +138,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-csso');
     grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-recess');
@@ -146,6 +147,6 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['styles', 'scripts', 'imagemin']);
     // 5. Registering different tasks for ease and use, just to compile scripts/styles or a meager build
     grunt.registerTask('build', ['compass', 'csscomb', 'concat', 'recess']);
-    grunt.registerTask('styles', ['compass', 'csscomb', 'csso', 'csslint', 'recess']);
-    grunt.registerTask('scripts', ['concat', 'uglify']);
+    grunt.registerTask('styles', ['clean:compass','clean:css','compass', 'csscomb', 'csso', 'csslint', 'recess']);
+    grunt.registerTask('scripts', ['clean:js','concat', 'uglify']);
 };
