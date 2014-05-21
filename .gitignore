@@ -1,2 +1,5 @@
 .sass_cache/**/**
 node_modules/**/**
+dist/**/**
+.sass-cache/**/**
+assets/css/*.css
